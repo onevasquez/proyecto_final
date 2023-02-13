@@ -1,0 +1,1414 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+
+}
+
+body{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #464646;
+    position: relative;
+    -webkit-text-size-adjust: none;
+    text-rendering: optimizeLegibility;
+}
+ul{list-style: none;}
+
+.container{
+max-width: 768px;
+margin: auto;
+
+} 
+ /* header inicio */
+header{
+    background-color: rgb(245,245,245);
+    background-size: cover;
+    background-position: center center;
+    transition: all .3s ease;
+}  
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header img{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+header .container{ 
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #fff;
+    z-index: 1200;
+    box-shadow: 0 4px 15px -2px grey;
+ 
+}
+/* inicio del nav */
+.checkbtn{
+    display: block;
+}
+ul{
+position: fixed;
+width: 90vw;
+height: 100%;
+background: #fff;
+top: 51px;
+right: -100%;
+text-align: center;
+overflow-y: scroll;
+transition: all .6s ease-in-out;
+z-index: 400;
+
+}
+.versiculo{
+    display: flex;
+    justify-content: flex-end;
+    right: -100%;
+
+}
+
+nav ul li{
+    display:flex;
+    margin: 30px 0px;
+    line-height: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+nav ul li a{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .21px;
+    text-transform: uppercase;
+    display: flex;
+}
+nav ul li a:hover{
+    color: rgb(160, 160, 8);
+}
+
+
+
+
+#check:checked ~ ul{
+    right:-10%;
+}  
+
+/* btn inicio */
+#check{
+    display: none;
+}
+
+.btn-text{
+    display: flex;
+    font-weight: 700;
+    text-transform: uppercase;
+    justify-content: center;
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 16px;
+    margin-left: 35px;
+    margin-right: 5px;
+    
+}
+
+.checkbtn{
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+    bottom: 12px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    
+
+    
+    
+}
+
+/* video */
+
+#info{
+    background-color: rgb(245,245,245);
+    width: calc(100 - 50px);
+    overflow: hidden;
+    position:relative;
+    height: 100vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../img/pexels-luis-quintero-1771219.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.title{
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(205, 202, 202);
+    text-shadow: 2px 2px 2px rgb(18, 3, 3); 
+}
+
+.title h2{
+    padding: 3px;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+
+.title p{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-shadow: #000000;
+
+}
+
+.title a{
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0.3rem;
+    color: #c6c3c3;
+}
+
+/* final video */
+
+/* info comienzo */
+ 
+#somos .container{
+    margin:  0 auto;
+    text-align: center;
+    max-width: 1200px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding:53px 20px;
+}
+.somos-text{
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* info final */
+
+/* section blog */
+#nuestros-blogs{
+    margin:  0 auto;
+    text-align: center;
+    max-width: 1200px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding:53px 20px;
+    color: #fff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(../img/pexels-ivanov-vladimir-5986134.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+
+.blog-title{
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: -.02em;
+}
+
+p{
+    overflow-wrap: break-word;
+    margin-top: 8px;
+}
+
+blog-button:last-child{
+    margin-bottom: 50px !important;
+}
+
+.blog-button{
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background: 0 0;
+    border-width: 2px;
+    border-style: solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 25px;
+    transition: all .4s ease 0s;
+    appearance: none;
+}
+
+/* section final */
+
+/* section imagen */
+#final{
+    margin:  0 auto;
+    text-align: center;
+    max-width: 1200px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding:53px 20px;
+    color: #fff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(../img/pexels-sam-lim-1465996.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center center;
+    background-attachment: fixed;
+    
+}
+
+.final-text p{
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: -.02em;
+
+}
+
+/* section img final */
+
+/* politcas inicio */
+
+.politicas-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    gap: 5px;
+    height: 40vh;
+    padding: 40px 30px;
+    position:relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.text-icon a{
+    color: #fff;
+}
+
+/* footer inicio */
+.icon{
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+/*final de footer*/
+
+
+/*inicio del blog card*/
+
+#somos-container{
+    margin: 2rem  0 0 auto ;
+    text-align: center;
+    max-width: 1200px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding:53px 20px;
+}
+.somos-text-blog{
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+#card-wrap{
+    display:flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+article.card{
+    max-width:175px;
+    background: #f6eeee;
+    border-radius: 8px;
+    margin:0.5rem auto 0.4rem;
+    box-shadow: 0 0 12px rgb(171, 169, 166);
+}
+
+.header-card img{
+    border-radius: 5px 7px 0 0;
+    max-height: 100px;
+    height: 100px;
+    width: 100%;
+}
+
+.text-card{
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.perfil-card img{
+    width: 40px;
+    margin: 0rem 0.5rem 0.2rem 0.1rem;
+    border-radius: 50%;
+}
+
+
+.perfil-card{
+    display: flex;
+}
+
+.text-card h3{
+    margin-top: auto;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.text-card p{
+    font-weight: 350;
+    margin: auto;
+}
+.text-perfil-card span{
+    display: flex;
+    justify-content:initial;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #000505;
+} 
+.text-perfil-card span:nth-child(2)
+{
+    color: #828080;
+}
+
+/*final del blog card*/
+
+/*inicio de la pagina de jesus*/
+
+#infos{
+    background-color: rgb(245,245,245);
+    width: calc(100 - 50px);
+    overflow: hidden;
+    position:relative;
+    height: 60vh;
+    background-image: url("../img/jesus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.titles{
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(214, 211, 211);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0); 
+}
+
+.titles h1{
+    margin-bottom: 7rem;
+    padding: 1.5rem;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.somos-text p{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-shadow: #000000;
+
+}
+
+.somos-text h3{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+blog-buttons:last-child{
+    margin-bottom: 50px !important;
+}
+
+.blog-buttons{
+    justify-content: center;
+    margin-top: 22rem;
+    margin-left: 4rem;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #dadada;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background: 0 0;
+    border-width: 2px;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 20px;
+    transition: all .4s ease 0s;
+    appearance: none;
+}
+
+/*final de la pag de jesus*/
+
+/*comienzo del blog  alguien*/
+
+#alguien{
+    background-color: rgb(245,245,245);
+    width: 100%;
+    overflow: hidden;
+    position:relative;
+    height: 35vh;
+    margin-top: 40px;
+    background-image: url("../img/alguien.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+/*final del blog alguien*/
+
+/*comienzo del blog hombre*/
+#hombre{
+    background-color: rgb(245,245,245);
+    width: 100%;
+    overflow: hidden;
+    position:relative;
+    height: 35vh;
+    margin-top: 40px;
+    background-image: url("../img/hablo.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+/*final de pag hombre*/
+
+/*comienzo de llamado*/
+#llamado{
+    background-color: rgb(245,245,245);
+    width: 100%;
+    overflow: hidden;
+    position:relative;
+    height: 35vh;
+    margin-top: 40px;
+    background-image: url("../img/Llamados\ \(1\).png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+#esto {
+    background-color: rgb(245,245,245);
+    width: 100%;
+    overflow: hidden;
+    position:relative;
+    height: 60vh;
+    background-image: url("../img/pexels-adonis-sarmas-10725736.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+/*termino pag de blo esto*/
+
+.formu{
+    display: grid;
+    background-image:url("../img/pexels-adonis-sarmas-10725736.jpg");
+    height: 100vh;
+}
+
+.column-half h3{
+    padding: 0rem 0.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #e4dede; 
+    letter-spacing: 1px;
+}
+.formulario{
+    display: flex;
+    flex-flow: column;
+    padding: 0rem 1rem;
+}
+
+.formulario input{
+    margin: 0.3rem 0rem;
+    padding: 0.5rem 0.2rem;
+}
+
+.formulario button{
+width: fit-content;
+border: none;
+padding: 0.5rem 1rem;
+font-size: 0.7rem;
+}
+
+/*final de blog card*/
+
+/*inico de ipad*/
+
+@media only screen and (min-width:425px){
+    article.card{
+        max-width: 200px;
+        background: #f6eeee;
+        border-radius: 8px;
+        margin:0.3rem auto 0.4rem;
+        box-shadow: 0 0 12px rgb(171, 169, 166);
+    }
+    
+    .header-card img{
+        border-radius: 5px 7px 0 0;
+        max-height: 120px;
+        height: 120px;
+        width: 100%;
+    }
+    
+    .perfil-card img{
+        width: 40px;
+        margin: 0rem 1rem 0rem 0.2rem;
+        border-radius: 50%;
+    }
+
+    .text-card h3{
+        margin: 0.6rem 0.9rem 0rem;
+        font-size: 1rem;
+        font-weight: 900;
+        line-height: 1.3rem;
+    }
+    .text-card p{
+        font-weight: 350;
+        margin: auto;
+        margin-bottom: 2rem;
+        padding: 0rem 1rem;
+    }
+    .text-perfil-card span{
+        display: flex;
+        margin-top: auto;
+        justify-content:initial;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #000505;
+    } 
+
+    }
+    
+
+
+
+
+
+
+@media only screen and (min-width:768px){
+ul{list-style: none;}
+
+.container{
+max-width: 820px;
+margin: auto;
+
+} 
+ /* header inicio */
+header{
+    background-color: rgb(245,245,245);
+    background-size: cover;
+    background-position: center center;
+    transition: all .3s ease;
+}  
+
+a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+}
+
+header img{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+header .container{ 
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #fff;
+    z-index: 1200;
+    box-shadow: 0 4px 15px -2px grey;
+}
+/*header final/*
+
+
+/* inicio del nav */
+.checkbtn{
+    display: block;
+}
+ul{
+position:fixed;
+width: 90vw;
+height: 100%;
+background: #fff;
+top: 51px;
+right: -100%;
+text-align: center;
+overflow-y: scroll;
+transition: all .6s ease-in-out;
+z-index: 400;
+
+}
+
+nav ul li{
+    display:flex;
+    margin: 30px 0px;
+    line-height: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+nav ul li a{
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: .21px;
+    text-transform: uppercase;
+    display: flex;
+}
+nav ul li a:hover{
+    color: rgb(160, 160, 8);
+}
+
+
+
+
+#check:checked ~ ul{
+    right:-5%;
+}  
+
+/* btn inicio */
+#check{
+    display: none;
+}
+
+.btn-text{
+    display: flex;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    justify-content: center;
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 16px;
+    margin-left: 35px;
+}
+
+.checkbtn{
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+    bottom: 12px;
+    width: 100px;
+    height: 100px;
+    position: relative;   
+}
+
+
+/* video */
+
+#info{
+    background-color: rgb(245,245,245);
+    width: 100%;
+    padding-right: 100px;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#info{
+    height:100vh;
+    background-position: center center ;
+}
+
+.title{
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000; 
+}
+
+.title h2{
+    padding: 1rem;
+    letter-spacing: 0.6rem;
+    font-size: 3rem;
+}
+
+.title p{
+    line-height:1.8rem;
+    font-size: 1.5rem;
+    padding: 0rem 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.title a{
+    justify-content: center;
+    font-size: 2.2rem;
+    margin: 0.5rem;
+    color: #fff;
+}
+
+/* final video */
+
+/* info comienzo */
+#somos .container{
+    margin:  0 auto;
+    text-align: center;
+    max-width: 1024px;
+    position: relative;
+    padding:7.5rem;
+}
+.somos-text p{
+    font-size:1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+/* info final */
+
+/* section blog */
+#nuestros-blogs{
+    margin:  0 auto;
+    text-align: center;
+    max-width: 1024px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding:6rem 1.5rem;
+    color: #fff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(../img/pexels-ivanov-vladimir-5986134.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+
+.blog-title p{
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0;
+    letter-spacing: -.02em;
+}
+
+p{
+    line-height: 1.8rem;
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+    margin-top: 0.5;
+}
+
+blog-button:last-child{
+    margin-bottom: 50px !important;
+}
+
+.blog-button{
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 0.9rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background: 0 0;
+    border-width: 2px;
+    border-style: solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 25px;
+    transition: all .4s ease 0s;
+    appearance: none;
+}
+
+/* section final */
+
+/* section imagen */
+#final{
+    margin:  0 auto;
+    text-align: center;
+    max-width: 1024px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding:8rem 1.5rem;
+    color: #fff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(../img/pexels-sam-lim-1465996.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center center;
+    background-attachment: fixed;
+    
+}
+
+
+
+/* section img final */
+
+/* politcas inicio */
+
+.politicas-container{
+    display:flex;
+    flex-flow: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    gap: 5px;
+    height: 35vh;
+    padding: 1rem 1rem;
+    max-width: 1024px;
+    position:relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.text-icon a{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.politicas-container .icon{
+    display: flex;
+
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+
+.somos-text-blog h3{
+    font-size: 2rem;
+}
+
+.somos-text-blog p{
+    margin-top: 1.3rem;
+    font-size: 1.5rem;
+}
+article.card{
+    max-width: 368px;
+    background: #f6eeee;
+    border-radius: 8px;
+    margin:0.3rem auto 0.4rem;
+    box-shadow: 0 0 12px rgb(171, 169, 166);
+}
+
+.header-card img{
+    border-radius: 5px 7px 0 0;
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+}
+
+.perfil-card img{
+    width: 60px;
+    margin: 0rem 1rem 0rem 1rem;
+    border-radius: 50%;
+}
+
+
+.perfil-card{
+    display: flex;
+}
+
+.text-card h3{
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 30px;
+}
+.text-card p{
+    font-weight: 350;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
+}
+.text-perfil-card span{
+    display: flex;
+    margin-top: auto;
+    justify-content:initial;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #000505;
+} 
+.text-perfil-card span:nth-child(2)
+{
+    color: #828080;
+}
+
+#alguien,#hombre,#llamado,#esto,#infos{
+    height: 80vh;
+}
+.somos-text p{
+    font-size: 1.5rem;
+}
+
+.somos-text h3{
+    font-size: 1.8rem;
+    line-height: 40px;
+}
+
+.column-half h3{
+    font-size: 2rem;
+    padding: 0rem 0.8rem;
+    line-height: 30px;
+}
+
+.formu{
+    padding: 0rem 3rem;
+}
+.formulario input{
+    font-size: 1.3rem;
+}
+.formulario button{
+    font-size: 1rem;
+}
+
+@media only screen and (min-width:820px){
+    .container{
+        max-width: 1284px;
+        margin: auto;
+        }
+    /* inicio del nav */
+    .checkbtn{
+        display:flex;
+    }
+
+    a{
+        font-size: 1.2rem;
+    }
+
+    ul{
+    display: flex;
+    justify-content:center;
+    position:fixed;
+    height: 50px;
+    background:none;
+    top:0;
+    right:0;
+    left: 14rem;
+    overflow-y: scroll;
+    transition: all .5s ease-in-out;
+    z-index: 400;
+    
+    }
+    
+    nav ul li{
+        display:flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: 1.6rem 0px;
+        line-height: 0px;
+        padding-top: 0px;
+        padding-left: 15px;
+    }
+    nav ul li a{
+        font-size:1rem;
+        font-weight: 700;
+        letter-spacing: .21px;
+        text-transform: uppercase;
+        display: flex;
+    }
+    nav ul li a:hover{
+        color: rgb(160, 160, 8);
+    }
+
+    #check:checked ~ ul{
+        display: none;
+    }  
+    
+    /* btn inicio */
+    #check{
+        display: none;
+    }
+    
+    .btn-text{
+        display: none;
+    }
+    
+    .checkbtn{
+        display: none;
+        
+}
+
+.somos-text-blog{
+    padding: 0rem 5rem;
+}
+
+}
+
+@media only screen and (min-width:1024px){
+    .container{
+        max-width: 2560px;
+        margin: auto;
+        
+}
+.title h2{
+    margin-left: 3.5rem;
+    font-size: 1.8rem;
+}
+
+#info p{
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    padding: 0rem 13rem;
+
+}
+
+.title a{
+    font-size: 1.5rem;
+}
+
+#somos .somos-text p{
+    font-size: 1.2rem;
+    padding: 0rem 4rem;
+    margin-left: 3rem;
+}
+
+nav ul li a{
+    font-size: 1.2rem;
+}
+
+ul{
+    padding-right: 20rem;
+}
+
+#nuestros-blogs,#final{
+    max-width: 1280px;
+}
+
+.blog-title p{
+    margin-left: 2rem;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+}
+
+.blogs-text p,.final-tex p{
+    margin-left: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0rem 11rem;
+}
+
+.blog-button{
+    margin-left: 3rem;
+    font-size: 18px;
+}
+
+.politicas-container{
+    max-width: 1280px;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.icon {
+    font-size: 1rem;
+    display: flex;
+}
+
+.text-icon a{
+    font-size: 1rem;
+}
+
+#somos-container{
+    justify-content: center center;
+    text-align: center;
+    margin-top: 4rem;
+    margin-right: 9rem;
+    max-width: 700px;
+
+
+}
+
+
+#card-wrap{
+    flex-flow:row;
+    max-width: 1200px;
+    padding: 0rem 5rem;
+    justify-content: space-around;
+}
+
+article.card{
+    margin: 0.2rem;
+}
+
+.header-card img{
+    border-radius: 5px 7px 0 0;
+    max-height: 150px;
+    height: 150px;
+    width: 100%;
+}
+
+.text-card{
+    width:240px;
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+    padding: 0px 15px;
+    line-height: 0px;
+}
+
+.text-card h3{
+    line-height: 25px;
+    font-size: 1.3rem;
+}
+
+.perfil-card img{
+    width: 60px;
+    margin: 0rem 1rem 1rem 0.9rem;
+    border-radius: 50%;
+}
+
+.text-perfil-card span{
+    text-align: center;
+    font-size: 1rem;
+    margin: 2px 0px 5px;
+}
+
+.text-perfil-card span:nth-child(2)
+{
+    font-size: 1rem;
+}
+
+#alguien,#hombre,#llamado,#esto,#infos{
+    height: 100vh;
+}
+
+.somos-text h3{
+    font-size: 2rem;
+    line-height: 40px;
+    margin-bottom: 2rem;
+}
+
+.somos-text p{
+    font-size: 1.5rem;
+}
+
+.formulario{
+margin: 2rem;
+padding: 0rem 7rem;
+}
+
+.column-half h3{
+    margin-top: 7rem;
+    font-size: 1.5rem;
+    padding: 0rem 8rem;
+    line-height: 30px;
+}
+
+.formulario input{
+    font-size: 1rem;
+}
+
+.formulario button{
+    font-size: 0.7rem;
+}
+
+}
+
+@media only screen and (min-width:1440px){
+
+#nuestros-blogs,#final,.politicas-container{
+    max-width: 2560px;
+}
+
+.title h2{
+    font-size: 2.5rem;
+}
+#info .title p{
+    font-size: 1.7rem;
+    padding: 0rem 18rem;
+
+}
+
+.blogs-text,.final-tex{
+    padding: 0rem 5rem;
+}
+
+#somos-container{
+    margin-right: 22rem;
+}
+
+article.card{
+    max-width: 350px;
+}
+
+#alguien,#hombre,#llamado,#esto,#infos{
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.column-half h3{
+    margin-top: 5rem;
+    padding: 0rem 15rem;
+}
+
+.formulario input{
+    font-size: 1.2rem;
+
+}
+.formulario{
+    padding: 0rem 8rem;
+}
+
+
+.formulario button{
+    font-size: 1rem;
+}
+
+}
+
+@media only screen and (min-width:1364px){
+
+.title h2{
+    font-size: 2.5rem;
+}
+
+#info .title p{
+    font-size: 1.4rem;
+    padding: 0rem 20rem;
+}
+
+#nuestros-blogs,#final,.politicas-container{
+    max-width: 1364px;
+}
+
+.blogs-text p,.final-tex p{
+    padding: 0rem 18rem;
+}
+
+.blog-button{
+    font-size: 1rem;
+}
+
+#somos-container{
+    margin-right: 20rem;
+}
+
+article.card{
+    max-width: 320px;
+}
+
+#alguien,#hombre,#llamado,#esto{
+    height: 100vh;
+    margin-top: 30px;
+}
+
+}
+
+}
+
+
+
+
